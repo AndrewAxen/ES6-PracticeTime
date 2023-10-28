@@ -53,3 +53,16 @@ const myCat = new Cat("Whiskers");
 
 console.log(myDog.speak()); // Output: Buddy says Woof!
 console.log(myCat.speak()); // Output: Whiskers says Meow!
+
+// The console output
+const outputDiv = document.getElementById("output");
+outputDiv.innerHTML = `
+  <p>Part 1:</p>
+  <p>${girlGreetOutput}</p>
+  <p>Part 2:</p>
+  <p>${collegeGirlGreetOutput}</p>
+  <p>${collegeGirlStudyOutput}</p>
+  <p>Part 3:</p>
+  <p>${dogSpeakOutput}</p>
+  <p>${catSpeakOutput}</p>
+`;
