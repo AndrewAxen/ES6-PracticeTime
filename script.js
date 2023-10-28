@@ -10,6 +10,7 @@ class Person {
 }
 const girl = new Person('Rose', 19)
 console.log(girl.greet()) // Output: Hello, my name is Rose and I am 19 years old.
+const girlGreetOutput = girl.greet();
 
 // Part 2
 class Student extends Person {
@@ -25,6 +26,8 @@ study() {
 const collegeGirl = new Student('Diana', 20, 'Computer Science');
 console.log(collegeGirl.greet()); // Output: Hello, my name is Diana and I am 20 years old.
 console.log(collegeGirl.study()); // Output: I am studying Computer Science
+const collegeGirlGreetOutput = collegeGirl.greet();
+const collegeGirlStudyOutput = collegeGirl.study();
 
 // Part 3
 class Animal {
@@ -53,6 +56,9 @@ const myCat = new Cat("Whiskers");
 
 console.log(myDog.speak()); // Output: Buddy says Woof!
 console.log(myCat.speak()); // Output: Whiskers says Meow!
+
+const dogSpeakOutput = myDog.speak();
+const catSpeakOutput = myCat.speak();
 
 // The console output
 const outputDiv = document.getElementById("output");
